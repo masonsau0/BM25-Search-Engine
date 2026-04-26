@@ -1,0 +1,2 @@
+OpenAI releases GPT-five with stronger reasoning
+OpenAI shipped its next-generation language model on Tuesday, claiming substantial gains on mathematical reasoning, multi-step planning, and code generation benchmarks. Early enterprise customers reported a roughly thirty-percent reduction in hallucination rates compared to GPT-four-turbo. The model is available through the standard API at unchanged pricing for input tokens, with output tokens billed at a small premium.

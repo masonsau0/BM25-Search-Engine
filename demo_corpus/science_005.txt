@@ -1,0 +1,2 @@
+AI model predicts protein interactions across the proteome
+A new deep-learning model from DeepMind predicts how every human protein interacts with every other, producing the most comprehensive interaction map to date. Researchers expect the resource to accelerate drug discovery, particularly for conditions where the relevant biological pathway has been hard to characterise experimentally.

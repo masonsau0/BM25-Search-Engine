@@ -1,0 +1,2 @@
+Cybersecurity firm warns of new ransomware strain
+A novel ransomware family targeting hospital electronic-health-record systems has appeared in incident reports across three states. The malware encrypts patient databases and demands payment in privacy-focused cryptocurrencies. Security researchers traced the operators to an Eastern European group previously linked to industrial-control attacks.

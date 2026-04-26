@@ -1,0 +1,2 @@
+Quantum computing milestone reached at Google
+Google researchers reported error-corrected quantum operations on a logical qubit for the first time, a development the company called the most significant step toward fault-tolerant quantum computing in five years. The result is published in Nature; competing labs at IBM and IonQ said they expected to reproduce similar findings within months.

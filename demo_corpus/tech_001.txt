@@ -1,0 +1,2 @@
+Electric vehicle battery breakthrough doubles range
+Researchers at Stanford announced a solid-state lithium battery prototype that stores nearly twice the energy of conventional lithium-ion cells while charging to eighty percent capacity in fifteen minutes. The team expects commercial electric vehicle integration within five years if manufacturing yields improve. Industry analysts called the result a meaningful step toward grid-scale energy storage as well, where battery cost remains the dominant constraint.
