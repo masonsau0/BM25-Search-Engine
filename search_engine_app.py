@@ -66,7 +66,50 @@ st.sidebar.caption(f"Total tokens: {stats['total_tokens']:,}  ·  longest doc: {
 
 
 st.title("BM25 Search Engine")
-st.caption("Full-text retrieval over a 30-article demo corpus. The same algorithm scales unchanged to 130,000+ documents — see the LA Times pipeline scripts in this repo for the production-scale variant.")
+st.caption("Full-text retrieval over a 30-article demo corpus, built from scratch in pure Python — no Lucene, no Whoosh, no third-party search library.")
+
+with st.expander("How to use this app", expanded=False):
+    st.markdown("""
+**What this app does in plain English.**
+This is a tiny search engine, like a private mini-Google over 30 short
+news-style articles. Type a query, the engine ranks documents by how
+relevant they are. The interesting part is *how* it ranks them — using
+a formula called **BM25** that's been the gold standard of keyword
+search since the 1990s and still powers most of Google, Elasticsearch,
+and the search bar inside your apps.
+
+**Quick start (30 seconds).**
+1. Type a query into the search box, or click one of the **example
+   queries** below it.
+2. Read the ranked results. Each result shows a relevance score and a
+   snippet from the document.
+3. Expand any result to see the **per-term score breakdown** — exactly
+   *why* this document scored higher than the next one.
+
+**What the sliders mean (in the sidebar).**
+- **k1** — how much extra credit to give for a word appearing many
+  times. Higher k1 = a doc that mentions "battery" 10 times scores
+  much higher than one that mentions it once. Default 1.2 is a
+  long-standing sweet spot.
+- **b** — how much to penalise long documents. b = 1.0 fully
+  normalises by length (long docs get hit hardest); b = 0 ignores
+  length. Default 0.75 is the standard.
+- **Top-K results** — how many results to show.
+
+**What the per-term breakdown shows.**
+Each query word gets its own score for each document, based on:
+- **tf** — how often that word appears in this document.
+- **idf** — how rare the word is across ALL documents (rare words = more
+  informative).
+- **norm** — adjustment for document length.
+
+The final BM25 score is the sum of all term scores. The breakdown lets
+you audit the ranking — useful when a result feels surprising.
+
+**Try this.** Search "electric vehicle battery". Then push **b** all the
+way down to 0 and watch long documents climb up the ranking — that's
+length normalisation in action.
+""")
 
 query = st.text_input("Query", placeholder="e.g. electric vehicle battery, fusion energy, supreme court")
 
