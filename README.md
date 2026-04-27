@@ -1,9 +1,9 @@
 # BM25 Search Engine
 
-**[Live demo](https://mason-bm25-search-engine.streamlit.app/)** — runs in your browser, no install required.
+**[Live demo](https://mason-bm25-search-engine.streamlit.app/)** : runs in the browser, no install required.
 
 A from-scratch information-retrieval system implementing the **Okapi BM25**
-ranking model — no Lucene, no Whoosh, no third-party search library. The
+ranking model : no Lucene, no Whoosh, no third-party search library. The
 tokenizer, inverted index, and scoring formula are all built from first
 principles in pure Python, exposed as both a tidy library API and an
 interactive search dashboard.
@@ -56,11 +56,11 @@ streamlit run search_engine_app.py
 
 The dashboard:
 
-- **Index stats** — number of documents, vocabulary size, average document length, total tokens.
-- **BM25 tunables** — sliders for `k₁` and `b` so you can see the ranking shift in real time.
-- **Quick-start example queries** — buttons that pre-populate the search box with sensible queries against the demo corpus.
-- **Per-result expandable view** — full document text plus a per-term BM25 score breakdown showing exactly why this document scored higher than the next.
-- **Score distribution chart** — bar chart of the top-K scores so you can spot a steep cutoff vs. a flat tail.
+- **Index stats** : number of documents, vocabulary size, average document length, total tokens.
+- **BM25 tunables** : sliders for `k₁` and `b` so you can see the ranking shift in real time.
+- **Quick-start example queries** : buttons that pre-populate the search box with sensible queries against the demo corpus.
+- **Per-result expandable view** : full document text plus a per-term BM25 score breakdown showing exactly why this document scored higher than the next.
+- **Score distribution chart** : bar chart of the top-K scores so you can spot a steep cutoff vs. a flat tail.
 
 ### Programmatic use
 
@@ -75,11 +75,11 @@ for h in hits:
 ```
 
 To index a different document set, drop your own `.txt` files in a folder
-and point `Corpus.from_directory()` at it — the rest of the pipeline (index
+and point `Corpus.from_directory()` at it : the rest of the pipeline (index
 build, query, score breakdown) works unchanged.
 
 ## Stack
 
 Python (standard library + `pandas` for tabular display) · **Streamlit**
-(dashboard). No third-party search/IR library — the engine is built from
+(dashboard). No third-party search/IR library : the engine is built from
 first principles.
