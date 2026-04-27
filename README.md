@@ -1,6 +1,6 @@
 # BM25 Search Engine
 
-**[Live demo](https://bm25-search-engine.streamlit.app)** — runs in your browser, no install required.
+**[Live demo](https://mason-bm25-search-engine.streamlit.app/)** — runs in your browser, no install required.
 
 A from-scratch information-retrieval system implementing the **Okapi BM25**
 ranking model — no Lucene, no Whoosh, no third-party search library. The
